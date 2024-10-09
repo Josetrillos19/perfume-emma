@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumeria emma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <br><br><br>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/logo_redondo__1_-removebg-preview.png" alt="" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoría</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="hombre.html">Hombre</a></li>
+                            <li><a class="dropdown-item" href="mujer.html">Mujer</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-custom" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin menú -->
+    <br><br>
+    <!-- Carrusel -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagenes/loco cuadrado.png" class="d-block w-100" alt="Carrusel 1">
+                        </div>
+                        <div class="carousel-item">
+                            <video width="100%" height="450" controls>
+                                <source src="video/video promo.mp4"video/mp4">
+                                Tu navegador no soporta la etiqueta de video.
+                            </video>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider-horizontal"></hr>
+        <!-- Tarjetas -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes/1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ISSEY MIYAKKE MUJER</h5>
+                        <p class="card-text">Un delicado y empolvado acorde de rosa y loto realza la faceta fresca y acuática de la fragancia. En el corazón de la fragancia encontramos un buqué floral lleno de suavidad.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-secondary" id="decrement">-</button>
+                            <input type="number" class="form-control" id="quantity" value="0" min="1" readonly>
+                            <button class="btn btn-secondary" id="increment">+</button>
+                        </div>
+                        <a id="whatsappLink" href="https://api.whatsapp.com/send?phone=573125737712&text=" target="_blank" class="btn btn-primary">Compra</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes/hombre/10.png"card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">SWISS ARMY</h5>
+                        <p class="card-text">Las Notas de Salida son menta, notas verdes, bergamota, yuzu y jengibre; las Notas de Corazón son lavanda, romero, hojas de violeta, flor de las nieves y geranio.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-secondary" id="decrement">-</button>
+                            <input type="number" class="form-control" id="quantity" value="0" min="1" readonly>
+                            <button class="btn btn-secondary" id="increment">+</button>
+                        </div>
+                        <a id="whatsappLink" href="https://api.whatsapp.com/send?phone=573125737712&text=" target="_blank" class="btn btn-primary">Compra</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes/10.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Ariana Grande</h5>
+                        <p class="card-text">Cloud es un aroma adictivo se abre con una mezcla de ensueño de flores de lavanda seductora, pera jugosa prohibida y bergamota deliciosa.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-secondary" id="decrement2">-</button>
+                            <input type="number" class="form-control" id="quantity2" value="0" min="1" readonly>
+                            <button class="btn btn-secondary" id="increment2">+</button>
+                        </div>
+                        <a id="whatsappLink2" href="https://api.whatsapp.com/send?phone=573125737712&text=" target="_blank" class="btn btn-primary">Compra</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- fin Tarjetas -->
+
+    <script>
+        // Variables para el primer producto
+        const quantityInput = document.getElementById('quantity');
+        const whatsappLink = document.getElementById('whatsappLink');
+
+        // Incrementar la cantidad del primer producto
+        document.getElementById('increment').addEventListener('click', () => {
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+            updateWhatsAppLink();
+        });
+
+        // Decrementar la cantidad del primer producto
+        document.getElementById('decrement').addEventListener('click', () => {
+            if (quantityInput.value > 0) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+                updateWhatsAppLink();
+            }
+        });
+
+        // Actualiza el enlace de WhatsApp con la información del primer producto
+        function updateWhatsAppLink() {
+            const quantity = quantityInput.value;
+            const productName = "ISSEY MIYAKKE MUJER";
+            const message = `Hola, me interesa el producto "${productName}" que vi en su sitio. Me gustaría saber más sobre las características y el precio. Quiero comprar ${quantity} unidades. Muchas gracias!`;
+            whatsappLink.href = `https://api.whatsapp.com/send?phone=573125737712&text=${encodeURIComponent(message)}`;
+        }
+
+        // Variables para el segundo producto
+        const quantityInput2 = document.getElementById('quantity2');
+        const whatsappLink2 = document.getElementById('whatsappLink2');
+
+        // Incrementar la cantidad del segundo producto
+        document.getElementById('increment2').addEventListener('click', () => {
+            quantityInput2.value = parseInt(quantityInput2.value) + 1;
+            updateWhatsAppLink2();
+        });
+
+        // Decrementar la cantidad del segundo producto
+        document.getElementById('decrement2').addEventListener('click', () => {
+            if (quantityInput2.value > 0) {
+                quantityInput2.value = parseInt(quantityInput2.value) - 1;
+                updateWhatsAppLink2();
+            }
+        });
+
+        // Actualiza el enlace de WhatsApp con la información del segundo producto
+        function updateWhatsAppLink2() {
+            const quantity = quantityInput2.value;
+            const productName = "Cloud Ariana Grande";
+            const message = `Hola, me interesa el producto "${productName}" que vi en su sitio. Me gustaría saber más sobre las características y el precio. Quiero comprar ${quantity} unidades. Muchas gracias!`;
+            whatsappLink2.href = `https://api.whatsapp.com/send?phone=573125737712&text=${encodeURIComponent(message)}`;
+        }
+    </script>
+
+
+
+
+</body>
+</html>
